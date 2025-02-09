@@ -26,9 +26,7 @@ app.use(morgan())
 app.use(helmet({
     crossOriginResourcePolicy : false
 }))
-app.use(function (req, res) {
-    res.header("Access-Control-Allow-Origin", "*");
-});
+
 const PORT = 8080 || process.env.PORT 
 
 app.get("/",(request,response)=>{
