@@ -17,7 +17,7 @@ import orderRouter from './route/order.route.js'
 
 const app = express()
 app.use(cors({
-    origin : 'https://www.dientromt.com/',
+    origin : 'https://www.dientromt.com',
     credentials : true,
 }))
 app.use(express.json())
